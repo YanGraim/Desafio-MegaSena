@@ -4,10 +4,12 @@ function sorteio(numeros) {
         return [];
     }
 
-    const numeroAleatorio = Math.floor(Math.random() * 60) + 1;
-
-    return numeroAleatorio;
+    const numeroSorteado = [];
+    while(numeroSorteado.length > numeros) {
+        const numeroAleatorio = Math.floor(Math.random() * 60) + 1;
+        return numeroAleatorio;
+    }
 }
 
-const numeroSorteado = sorteio(7);
-console.log(numeroSorteado);
+const numerosSorteio = sorteio(7);
+console.log(numerosSorteio);
