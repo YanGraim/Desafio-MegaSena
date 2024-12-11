@@ -7,7 +7,7 @@ function sorteio(numeros) {
     const numeroSorteado = [];
     while(numeroSorteado.length > numeros) {
         const numeroAleatorio = Math.floor(Math.random() * 60) + 1;
-        return numeroAleatorio;
+        numeroSorteado.push(numeroAleatorio);
     }
 }
 
