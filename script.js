@@ -7,10 +7,12 @@ function sorteio(numeros) {
     const numeroSorteado = [];
     while(numeroSorteado.length < numeros) {
         const numeroAleatorio = Math.floor(Math.random() * 60) + 1;
-        numeroSorteado.push(numeroAleatorio);
+        if(!numeroSorteado.includes(numeroAleatorio)) {
+            numeroSorteado.push(numeroAleatorio);
+        }
     }
 
-    return numeroSorteado;
+    return numeroSorteado.sort();
 }
 
 const numerosSorteio = sorteio(6);
