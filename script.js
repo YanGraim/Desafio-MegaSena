@@ -5,11 +5,13 @@ function sorteio(numeros) {
     }
 
     const numeroSorteado = [];
-    while(numeroSorteado.length > numeros) {
+    while(numeroSorteado.length < numeros) {
         const numeroAleatorio = Math.floor(Math.random() * 60) + 1;
         numeroSorteado.push(numeroAleatorio);
     }
+
+    return numeroSorteado;
 }
 
-const numerosSorteio = sorteio(7);
+const numerosSorteio = sorteio(6);
 console.log(numerosSorteio);
